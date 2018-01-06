@@ -42,7 +42,7 @@ foreach($userNamesArray as $name){
     }
 
     try{
-        EmailMessageGenerator::createEmail($useDetailsObject);
+        EmailMessageGenerator::createAndSendEmail($useDetailsObject);
     } catch(Exception $e){
         $log->error($e->getMessage());
         echo "Could not generate email message\r\n";
