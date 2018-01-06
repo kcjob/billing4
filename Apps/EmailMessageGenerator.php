@@ -3,7 +3,7 @@ namespace Apps;
 
 class EmailMessageGenerator
 {
-  static function createEmail($billObject){
+  static function createAndSendEmail($billObject){
     $emailParams = parse_ini_file("config/config.ini");
 
     $app = new TemplateView();
