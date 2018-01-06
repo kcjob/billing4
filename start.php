@@ -48,13 +48,4 @@ foreach($userNamesArray as $name){
         echo "Could not generate email message\r\n";
         die();
     }
-
-
-    //print_r($useDetailsObject);
-
-    //echo '***************************' . "\r\n";
-    //echo '*CONFIGURE AND SEND EMAIL *' . "\r\n";
-    //echo 'ß**************************' . "\r\n";
-
-
 }
